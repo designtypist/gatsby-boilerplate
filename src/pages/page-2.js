@@ -1,16 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import PageLinks from "../components/page_links";
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="sass-activated">
+      <SEO title="Page two" />
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <p>SASS has been activated!</p>
+      <PageLinks />
+    </div>
   </Layout>
-)
+);
 
-export default SecondPage
+export default SecondPage;

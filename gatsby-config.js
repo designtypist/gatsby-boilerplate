@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Boilerplate`,
     description: `My personal Gatsby boilerplate.`,
     author: `@designtypist`,
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,5 +29,21 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-lodash`,
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false
+        }
+      }
+    }
   ],
-}
+};
