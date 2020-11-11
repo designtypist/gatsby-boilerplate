@@ -29,7 +29,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-lodash`,
@@ -44,6 +43,24 @@ module.exports = {
           failOnError: false
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+          require("autoprefixer")
+        ],
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-fontawesome-css`
   ],
 };
