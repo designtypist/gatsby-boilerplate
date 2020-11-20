@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import PageLinks from "../components/page_links";
+import PageLinks from "../components/page-links";
 
 const SecondPage = () => (
   <Layout>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import PageLinks from "../components/page_links";
+import PageLinks from "../components/page-links";
 
 const Container = styled.div`
   margin: 3rem auto;

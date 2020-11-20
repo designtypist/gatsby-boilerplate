@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import PageLinks from "../components/page_links";
+import PageLinks from "../components/page-links";
 
 const ForthPage = () => (
   <Layout>
